@@ -2,9 +2,43 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'swansea';
+  src: url(./swansea-font/Swansea-q3pd.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'swansea';
+  src: url(./swansea-font/SwanseaBold-D0ox.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'swansea';
+  src: url(./swansea-font/SwanseaBoldItalic-p3Dv.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'swansea';
+  src: url(./swansea-font/SwanseaBoldItalic-p3Dv.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 body {
   margin: 0;
 }
+
+h1 {
+  font-family: swansea;
+  font-weight: bold;
+}
+
 .container-main {
   border: 5px solid black;
   display: grid;
