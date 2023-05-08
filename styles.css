@@ -34,22 +34,25 @@ body {
   margin: 0;
 }
 
-.navbar svg {
-  height: 1.2rem;
-  width: 1.2rem;
-}
-
-nav a {
-  font-family: swansea;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
+.container-main {
+  border: 5px solid black;
+  display: grid;
+  grid-template-columns: max(190px, 15%) 1fr max(180px, 15%);
+  grid-template-rows: 1fr auto auto;
+  gap: 5px;
 }
 
 h1 {
   font-family: swansea;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+
+/* navbar styling */
+.navbar {
+  background-color: red;
+  grid-row: 1 /4;
+  color: white;
 }
 
 .navbar-header {
@@ -60,36 +63,27 @@ h1 {
 }
 
 .navbar-header svg {
-  height: 2rem;
-  width: 2rem;
-}
-#dashboard {
-  height: 2rem;
-  width: 2rem;
-}
-
-.container-main {
-  border: 5px solid black;
-  display: grid;
-  grid-template-columns: max(190px, 15%) 1fr max(180px, 15%);
-  grid-template-rows: 1fr auto auto;
-  gap: 5px;
-}
-
-.navbar {
-  background-color: red;
-  grid-row: 1 /4;
-  color: white;
+  height: 3rem;
+  width: 3rem;
 }
 
 .navbar nav {
   display: grid;
 }
 
-.navbar-top div,
-.navbar-bottom div {
-  display: flex;
-  align-items: center;
+nav a {
+  font-family: swansea;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  margin: 5px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.navbar svg {
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .navbar-top,
@@ -98,14 +92,14 @@ h1 {
   margin-left: 20px;
 }
 
-.navbar-top {
-  margin-bottom: 40px;
+.navbar-top div,
+.navbar-bottom div {
+  display: flex;
+  align-items: center;
 }
 
-nav a {
-  margin: 5px;
-  padding: 0.5rem;
-  font-size: 1.2rem;
+.navbar-top {
+  margin-bottom: 40px;
 }
 
 .header {
