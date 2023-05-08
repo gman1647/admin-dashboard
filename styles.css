@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: 'swansea';
-  src: url(./swansea-font/Swansea-q3pd.ttf) format('truetype');
+  src: url(./swansea-font/Swansea.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'swansea';
-  src: url(./swansea-font/SwanseaBold-D0ox.ttf) format('truetype');
+  src: url(./swansea-font/SwanseaBold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'swansea';
-  src: url(./swansea-font/SwanseaBoldItalic-p3Dv.ttf) format('truetype');
+  src: url(./swansea-font/SwanseaItalic.ttf) format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'swansea';
-  src: url(./swansea-font/SwanseaBoldItalic-p3Dv.ttf) format('truetype');
+  src: url(./swansea-font/SwanseaBoldItalic.ttf) format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -35,26 +35,43 @@ body {
 }
 
 .navbar svg {
-  height: 24px;
-  width: 24px;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 nav a {
   font-family: swansea;
   text-decoration: none;
   color: white;
+  font-size: 1.2rem;
 }
 
 h1 {
   font-family: swansea;
   font-weight: bold;
-  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.navbar-header svg {
+  height: 2rem;
+  width: 2rem;
+}
+#dashboard {
+  height: 2rem;
+  width: 2rem;
 }
 
 .container-main {
   border: 5px solid black;
   display: grid;
-  grid-template-columns: max(180px, 15%) 1fr max(180px, 15%);
+  grid-template-columns: max(190px, 15%) 1fr max(180px, 15%);
   grid-template-rows: 1fr auto auto;
   gap: 5px;
 }
@@ -69,18 +86,24 @@ h1 {
   display: grid;
 }
 
-.navbar-top div {
+.navbar-top div,
+.navbar-bottom div {
   display: flex;
   align-items: center;
 }
 
-.navbar-top {
+.navbar-top,
+.navbar-bottom {
   display: grid;
   margin-left: 20px;
 }
 
+.navbar-top {
+  margin-bottom: 40px;
+}
+
 nav a {
-  margin: 10px;
+  margin: 5px;
   padding: 0.5rem;
   font-size: 1.2rem;
 }
