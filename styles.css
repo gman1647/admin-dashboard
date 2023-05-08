@@ -34,10 +34,9 @@ body {
   margin: 0;
 }
 
-.icon {
-  fill: white;
-  height: 25px;
-  width: 25px;
+.navbar svg {
+  height: 24px;
+  width: 24px;
 }
 
 nav a {
