@@ -106,7 +106,7 @@ nav a {
   grid-column: 2 /4;
   color: white;
   display: grid;
-  grid-template-rows: 50px 50px;
+  grid-template-rows: 50px 70px;
 }
 
 .header .icon {
@@ -138,7 +138,35 @@ nav a {
 }
 
 .header-bot {
-  display: flex;
+  display: grid;
+  grid-template-columns: 100px 1fr 450px;
+  align-items: center;
+}
+
+.header-bot .icon-large {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 20px;
+}
+
+.header-bot p {
+  margin: 0;
+}
+.header-bot .username-large {
+  font-size: 1.5rem;
+}
+.file-tools {
+  margin-right: 40px;
+}
+button {
+  border-radius: 25px;
+  height: 40px;
+  width: 95px;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  color: white;
+  border: 3px solid white;
+  background-color: blue;
 }
 
 .content {
