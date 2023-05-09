@@ -32,6 +32,7 @@
 
 body {
   margin: 0;
+  font-family: swansea;
 }
 
 .container-main {
@@ -43,7 +44,6 @@ body {
 }
 
 h1 {
-  font-family: swansea;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -72,7 +72,6 @@ h1 {
 }
 
 nav a {
-  font-family: swansea;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
@@ -110,8 +109,32 @@ nav a {
   grid-template-rows: 50px 50px;
 }
 
+.header .icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 10px;
+}
+
+.header .search {
+  margin-left: 25px;
+}
 .header-top {
   display: flex;
+  align-items: center;
+}
+
+.header-top p {
+  margin: 0 20px;
+  font-size: 1.5rem;
+}
+
+.search-bar {
+  min-width: 100px;
+  flex: 1;
+  border-radius: 10px;
+  height: 40px;
+  margin: 0 40px 0 20px;
+  background-color: lightgrey;
 }
 
 .header-bot {

@@ -76,19 +76,28 @@
       </div>
       <div class="header">
         <div class="header-top">
-          <input type="text" placeholder="Search..">
-          <div>alarm</div>
-          <div>icon</div>
-          <p>User Name</p>
+          <svg class="icon search" aria-hidden="true" focusable="false">
+            <use href="#search"></use>
+          </svg>
+          <input type="text" placeholder="Search.." class="search-bar">
+          <svg class="bell icon" aria-hidden="true" focusable="false">
+            <use href="#bell"></use>
+          </svg>
+          <svg class="icon-small icon" aria-hidden="true" focusable="false">
+            <use href="#profile"></use>
+          </svg>
+          <p>Jonathan Smith</p>
         </div>
         <div class="header-bot">
-          <div>Icon</div>
+          <svg class="icon-large" aria-hidden="true" focusable="false">
+            <use href="#profile"></use>
+          </svg>
           <div class ="greeting">
             <p>Hi There</p>
             <p>Greeting</p>
           </div>
           <div class="file-tools">
-            <button>New</button><button>Upload</button><button>Share</button>
+            <button type="button">New</button><button type="button">Upload</button><button type="button">Share</button>
           </div>
         </div>
       </div>
@@ -111,10 +120,34 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nogstrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="trending"></div>
           <h2>Trending</h2>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
-          <div>Placeholder</div>
+          <div>
+            <svg class="icon-small" aria-hidden="true" focusable="false">
+              <use href="#profile"></use>
+            </svg>
+            <p>@username</p>
+            <p>User Display Name</p>
+          </div>
+          <div>
+            <svg class="icon-small" aria-hidden="true" focusable="false">
+              <use href="#profile"></use>
+            </svg>
+            <p>@username</p>
+            <p>User Display Name</p>
+          </div>
+          <div>
+            <svg class="icon-small" aria-hidden="true" focusable="false">
+              <use href="#profile"></use>
+            </svg>
+            <p>@username</p>
+            <p>User Display Name</p>
+          </div>
+          <div>
+            <svg class="icon-small" aria-hidden="true" focusable="false">
+              <use href="#profile"></use>
+            </svg>
+            <p>@username</p>
+            <p>User Display Name</p>
+          </div>
       </div>
     </div class="container-main">
 
@@ -122,6 +155,10 @@
     <svg xmlns="http://www.w3.org/2000/svg">
       <symbol id="shield" viewbox="0 0 24 24">
         <path fill="currentColor" d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,3.18L19,6.3V11.22C19,12.92 18.5,14.65 17.65,16.17C16,14.94 13.26,14.5 12,14.5C10.74,14.5 8,14.94 6.35,16.17C5.5,14.65 5,12.92 5,11.22V6.3L12,3.18M12,6A3.5,3.5 0 0,0 8.5,9.5A3.5,3.5 0 0,0 12,13A3.5,3.5 0 0,0 15.5,9.5A3.5,3.5 0 0,0 12,6M12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8M12,16.5C13.57,16.5 15.64,17.11 16.53,17.84C15.29,19.38 13.7,20.55 12,21C10.3,20.55 8.71,19.38 7.47,17.84C8.37,17.11 10.43,16.5 12,16.5Z" />
+      </symbol>
+
+      <symbol id="profile" viewbox="0 0 24 24">
+        <path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z" />
       </symbol>
 
       <symbol id="message" viewbox="0 0 24 24">
@@ -141,7 +178,7 @@
       </symbol>
 
       <symbol id="home" viewbox="0 0 24 24">
-        <path fill="currentColor" d="M19.07,4.93C17.22,3 14.66,1.96 12,2C9.34,1.96 6.79,3 4.94,4.93C3,6.78 1.96,9.34 2,12C1.96,14.66 3,17.21 4.93,19.06C6.78,21 9.34,22.04 12,22C14.66,22.04 17.21,21 19.06,19.07C21,17.22 22.04,14.66 22,12C22.04,9.34 21,6.78 19.07,4.93M17,12V18H13.5V13H10.5V18H7V12H5L12,5L19.5,12H17Z" />
+        <path fill="currentColor" d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22" />
       </symbol>
 
       <symbol id="list" viewbox="0 0 24 24">
@@ -159,6 +196,14 @@
 
       <symbol id="dashboard" viewbox="0 0 24 24">
         <path fill="currentColor" d="M19,5V7H15V5H19M9,5V11H5V5H9M19,13V19H15V13H19M9,17V19H5V17H9M21,3H13V9H21V3M11,3H3V13H11V3M21,11H13V21H21V11M11,15H3V21H11V15Z" />
+      </symbol>
+
+      <symbol id="bell" viewbox="0 0 24 24">
+        <path fill="currentColor" d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z" />
+      </symbol>
+
+      <symbol id="search" viewbox="0 0 24 24">
+        <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
       </symbol>
     </svg>
 
