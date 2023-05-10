@@ -145,10 +145,10 @@ nav a {
 .search-bar {
   min-width: 100px;
   flex: 1;
-  border-radius: 10px;
+  border-radius: 15px;
   height: 40px;
   margin: 0 40px 0 20px;
-  background-color: lightgrey;
+  background-color: var(--color-100);
 }
 
 .header-bot {
